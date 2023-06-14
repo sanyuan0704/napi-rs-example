@@ -252,6 +252,10 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { sum } = nativeBinding
+const { sum, concatStr, getOptions, asyncFib, callThreadsafeFunction } = nativeBinding
 
 module.exports.sum = sum
+module.exports.concatStr = concatStr
+module.exports.getOptions = getOptions
+module.exports.asyncFib = asyncFib
+module.exports.callThreadsafeFunction = callThreadsafeFunction
